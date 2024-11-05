@@ -1,0 +1,420 @@
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../../../public/fonts/TestTiemposFine-Regular.otf') format('opentype'); 
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../../public/fonts/Inter_28pt-Medium.ttf');
+}
+
+.LoginContainer {
+  min-height: 100vh;
+  background-color: #F4F6F8;
+
+  > header {
+    width: 50%;
+    padding: 24px 24px 0 24px;
+    background-color: #F4F6F8;
+
+    > .Toolbar {
+      min-height: 48px;
+      padding: 0;
+
+      > a {
+        margin-top: 6px;
+      }
+
+      > button {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: .875rem;
+        line-height: 1.429;
+        min-width: 79px;
+        padding: 9px 17px;
+        height: 38px;
+        border-radius: 6px;
+        color: black;
+        border: 1px solid #00BFA5;
+
+        &:hover {
+          background-color: #ECFDF5;
+        }
+      }
+    }
+  }
+
+  > .signup-container {
+    height: 100vh;
+
+    > .login-image-grid {
+      height: 100%;
+      padding: 20px;
+
+      > img {
+        border-radius: 10px;
+      }
+    }
+
+    > .login-form-grid {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > .login-form-container {
+        width: 100%;
+        max-height: calc(100vh - 72px);
+        padding: 20px 0;
+        overflow-y: auto;
+
+        > .login-form-stack {
+          padding-top: 48px;
+          align-items: center;
+
+          > .signup-stack {
+            padding-bottom: 32px;
+
+            > span {
+              font-family: Tiempos;
+              font-size: 3rem;
+              line-height: 1.19;
+              color: #006658;
+            }
+          }
+
+          > .form-container {
+            max-width: 320px;
+            width: 320px;
+            height: fit-content;
+
+            > .welcome-form > .welcome-form-container {
+
+              > .signup-info {
+                background-color: #fff;
+                color: #2B3649;
+                transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                border: 1px solid #D1D5DB;
+                border-radius: 8px;
+                box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.1),
+                            0px 4px 4px -1px rgba(0, 0, 0, 0);
+
+                > .signup-title > span {
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                  font-size: 1.125rem;
+                  line-height: 1.389;
+                  font-weight: 500;
+                }
+
+                > .full-name-form-control,
+                > .full-address-form-control,
+                > .mobile-number-form-control,
+                > .date-birth-form-control,
+                > .gender-form-control {
+                  width: 100%;
+                  margin: 0;
+
+                  &.success {
+                  
+                    > label {
+                      display: none;
+                    }
+  
+                    > .MuiInputBase-root {
+                      padding: 8px 0;
+
+                      > input {
+                        &::-webkit-datetime-edit {
+                          color: rgb(55, 65, 81);
+                        }
+                      }
+                    }
+                  }
+
+                  &.error {
+                    background-color: #FEF2F2;
+                  }
+                  
+                  > label {
+                    width: calc(100% - 34px);
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 0.875rem;
+                    line-height: 1.429;
+                    padding: 0;
+                    white-space: normal;
+
+                    &.Mui-focused {
+                      color: rgb(0, 192, 165);
+                      transform: translate(7px, 7px) scale(0.75);
+                    }
+
+                    &.css-113d811-MuiFormLabel-root-MuiInputLabel-root {
+                      transform: translate(7px, 7px) scale(0.75);
+                    }
+
+                    &.css-1ew92b2-MuiFormLabel-root-MuiInputLabel-root {
+                      transform: translate(7px, 7px) scale(0.75);
+                    }
+
+                    &.error {
+                      transform: translate(7px, 7px) scale(0.75);
+                      color: #EF4444;
+
+                      > .MuiInputBase-root::before, > .MuiInputBase-root::after {
+                        border-bottom-color: #EF4444;
+                      }
+                    }
+                  }
+
+                  > .MuiInputBase-root {
+                    margin-top: 0;
+                    padding-top: 16px;
+                    overflow: hidden;
+                    transition: all 200ms ease-out;
+
+                    &::before {
+                      border-bottom: 1px solid #D1D5DB;
+                    }
+
+                    &::after {
+                      border-bottom: 2px solid #00BFA5;
+                    }
+
+                    &.error::before, &.error::after {
+                      border-bottom-color: #EF4444;
+                    }
+
+                    &.error > input {
+                        
+                      &::-webkit-datetime-edit {
+                        color: rgb(55, 65, 81);
+                      }
+                    }
+
+                    > input, > .MuiSelect-select {
+                      height: 1.4375em;
+                      font-family: Inter, Arial, Helvetica, sans-serif;
+                      padding: 7.5px 14px 10px 16px;
+                      font-size: .875rem;
+                      line-height: 1.429;
+                      box-sizing: content-box;
+                      text-overflow: ellipsis;
+                      border: 0;
+
+                      &::-webkit-calendar-picker-indicator {
+                        display: none;
+                      }
+
+                      &::-webkit-datetime-edit {
+                          color: transparent;
+                      }
+
+                      &:focus::-webkit-datetime-edit {
+                        color: rgb(55, 65, 81);
+                      }
+                    }
+
+                    > .styled-textfield-icon  {
+                      margin: auto 10px;                    
+                      
+                      > .styled-textfield-svg-error path {
+                        fill: #EF4444;
+                      }
+                    }
+                  }
+                }
+
+                > .full-address-form-control > .MuiInputBase-root {
+                  height: 100px;
+                  padding-top: 10px;
+                }
+
+                > .gender-form-control > label {
+                  padding-left: 16px;
+                }
+              }
+
+              > .email-signup {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                margin-top: 20px;
+
+                > .email-form-control {
+                  margin-top: 8px;
+
+                  > .email-outlined-input {
+
+                    &.Mui-error {
+                      background-color: #FEF2F2;
+                      color: #EF4444;
+                      -webkit-text-fill-color: #EF4444;
+
+                      > fieldset {
+                        border-color: #FCA5A5;
+                      }
+                    }
+
+                    > input {
+                      padding: 8.5px 14px;
+                      text-overflow: ellipsis;
+                      font-size: .875rem;
+                      border-radius: 6px;
+                    }
+
+                    > fieldset {
+                      border-color: #D1D5DB;
+                    }
+                  } 
+
+                  > .helper-text-error {
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 0.74rem;
+                    line-height: 1.417;
+                    font-weight: 400;
+                    color: rgb(239, 68, 68);
+                    margin: 8px 14px 0 0;
+
+                    &.hide {
+                      display: none;
+                    }
+                  }
+                }
+
+                > .email-button {
+                  width: 100%;
+                  padding-top: 24px;
+
+                  > button {
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 1rem;
+                    line-height: 1.313;
+                    min-width: 101px;
+                    padding: 13px 25px;
+                    height: 47px;
+                    border-radius: 6px;
+                    background-color: #2B3649;
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
+                    &:hover {
+                      background-color: #152438;
+                    }
+
+                    &:active {
+                      box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),
+                                  0px 8px 10px 1px rgba(0,0,0,0.14),
+                                  0px 3px 14px 2px rgba(0,0,0,0.12);
+                    }
+
+                    > span {
+                      width: 24px;
+                      height: 24px;
+                      margin: auto 8px 0 -4px;
+                    }
+                  }
+                }
+
+                > .offer-terms {
+                  width: 100%;
+                  padding-top: 24px;
+                  text-align: center;
+
+                  > .offer-terms-stack {
+                    flex-direction: row;
+                    justify-content: center;
+
+                    > p {
+                      font-family: Inter, Helvetica, Arial, sans-serif;
+                      font-size: .875rem;
+                      line-height: 1.429;
+                      text-align: center;
+                      color: #2B3649;
+
+                      > a {
+                        font: inherit;
+                        color: #00BFA5;
+                        text-decoration: none;
+                      }
+                    }
+
+                    > button {
+                      min-width: 24px;
+                      padding: 0;
+                      margin-left: 4px;
+
+                      > svg {
+                        width: 24px;
+                        height: 24px;
+
+                        &.icon-up {
+                          transform: rotate(180deg)
+                        }
+                      }
+                    }
+                  } 
+
+                  > span {
+                    margin-top: 8px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 0.69rem;
+                    line-height: 1.125;
+                    color: rgb(55, 65, 81);
+
+                    > a {
+                      font: inherit;
+                      color: #00BFA5;
+                      text-decoration: none;
+                    }
+                  }
+                }
+              }
+            } 
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .LoginContainer {
+
+    > header {
+      width: 100%;
+    }
+
+    > .signup-container {
+      height: 100%;
+      padding-bottom: 24px;
+
+      > .login-image-grid {
+        height: 360px;
+        margin-top: 68px;
+
+        > img {
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+
+      > .login-form-grid > .login-form-container {
+        padding: 0;
+
+        > .login-form-stack {
+          padding-top: 24px;
+  
+          > .signup-stack {
+            display: none;
+          }
+        } 
+      } 
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .LoginContainer > .signup-container > .login-image-grid {
+    height: 240px;
+    padding: 10px;
+  }
+}
