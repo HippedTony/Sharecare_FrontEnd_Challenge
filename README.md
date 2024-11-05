@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Sharecare Front End Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project replicates the registration page of Sharecare.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This project is a front-end challenge designed to build a responsive and interactive user interface. It aims to replicate the Sharecare registration page, including:
 
-### `npm start`
+Responsive Layout: The UI seamlessly adjusts between desktop, tablet, and mobile views.
+Registration Form: Includes all the fields present in the original Sharecare registration form.
+Form Validation: Implements validation logic to ensure users enter data in the correct format for each field.
+CSS for UI Replication: Writes CSS styles to match the appearance.
+Unit Tests: Unit tests to ensure the functionality of the components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Node.js and npm (or yarn): Make sure you have Node.js and its package manager installed. You can download them from the official website.
+A code editor: Choose your preferred code editor (VS Code, Atom, Sublime Text, etc.).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+Clone the repository: git clone [<your-repository-url>](https://github.com/HippedTony/Sharecare_FrontEnd_Challenge.git)
+Navigate to the project directory: cd <your-project-directory>
+Install dependencies: npm install (or yarn install)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Running the app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Start the development server: npm start (or yarn start)
+Open your web browser and visit http://localhost:3000 to see your app running.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Project Structure
 
-### `npm run eject`
+public: Contains static assets for the application.
+src: Contains the source code of the application.
+  components: Contains the reusable components of the application.
+  tests: Contains the unit tests for the application.
+  view: Contains the main view of the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React: The core library for building user interfaces.
+@mui/material: A library of React components that provides a consistent and modern look and feel.
+Jest: A JavaScript testing framework.
+react-email-validator: A library to validate the email field.
+react-number-format: A library to give the mobile number a format.
+@testing-library: A library to use user event inputs in the testings.
